@@ -85,7 +85,7 @@ Users need support identifying what deserves their attention now without surrend
 
 ---
 
-### 4. Problem Area: Distraction and Attention Recovery
+## 4. Problem Area: Distraction and Attention Recovery
 
 ### The Problem
 
@@ -187,7 +187,7 @@ They also need assistance preparing for and completing transitions without unnec
 
 ## 6. Shared Underlying Problem
 
-Prioritization dificulty, distraction, and hyperfocus can appear to represent different attention problems.
+Prioritization difficulty, distraction, and hyperfocus can appear to represent different attention problems.
 
 In practice, they can be understood as different points where the user's intentions and actual attention become misaligned.
 
@@ -195,15 +195,15 @@ In practice, they can be understood as different points where the user's intenti
 
 The user has not yet determined where attention should go.
 
-````text
+```text
 Multiple Responsibilities
         ↓
 Which matters now?
         ↓
 Difficulty choosing
         ↓
-Delayed or incorrect priority```
-````
+Delayed or incorrect priority
+```
 
 ### Distraction
 

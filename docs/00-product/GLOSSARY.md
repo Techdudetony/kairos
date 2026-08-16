@@ -816,4 +816,4 @@ Existing definitions should be updated when product decisions change.
 Significant terminology changes that affect requirements,
 architecture, or user experience should also be recorded in:
 
-[docs/07-decisions/DECISION_LOG.md](docs/07-decisions/DECISION_LOG.md)
+[../07-decisions/DECISION_LOG.md](../07-decisions/DECISION_LOG.md)

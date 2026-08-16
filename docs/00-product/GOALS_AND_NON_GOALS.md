@@ -18,11 +18,15 @@ Kairos has the potential to address many problems related to productivity, organ
 
 Attempting to solve all of these problems simultaneously would create an unfocused product and an unrealistic development scope.
 
-These goals establish areas the product should intentionally avoid or defer unless future research provides a strong reason to reconsider them.
+The goals establish the outcomes Kairos intends to support.
+
+The non-goals establish areas the product should intentionally avoid
+or defer unless future research provides a strong reason to
+reconsider them.
 
 MVP-specific scope will be defined separately in:
 
-[docs/06-development/MVP_SCOPE.md](docs/06-development/MVP_SCOPE.md)
+[../06-development/MVP_SCOPE.md](../06-development/MVP_SCOPE.md)
 
 ---
 
@@ -50,9 +54,9 @@ Users spend less time determining what they should be doing and more time intent
 
 ### Goal 2: Help Users Recover From Distraction
 
-Kairos should help users recognize when their attention has shifted awat from an intended activity.
+Kairos should help users recognize when their attention has shifted away from an intended activity.
 
-The purpose is not to eliminate all distractoin.
+The purpose is not to eliminate all distraction.
 
 Instead, Kairos should make it easier for users to:
 
@@ -87,7 +91,7 @@ Kairos should help users disengage from deep focus when they have previously ind
 
 ### Desired Outcome
 
-Users can benefit from periods of deep concentration without unintentionally scrificing other responsibilities or their well-being.
+Users can benefit from periods of deep concentration without unintentionally sacrificing other responsibilities or their well-being.
 
 ---
 
@@ -168,7 +172,7 @@ When appropriate, Kairos should help users:
 - Understand what is happening next
 - Begin the next activity
 
-### Desire Outcome
+### Desired Outcome
 
 Users are less likely to miss or significantly delay upcoming responsibilities because they were engaged in another activity.
 
@@ -203,7 +207,7 @@ Personalization may eventually include:
 
 - Visual themes
 - Widget configuration
-- Communicaton style
+- Communication style
 - Focus strictness
 - Intervention behavior
 - Activity-awareness level
@@ -271,7 +275,7 @@ Users feel assisted by Kairos rather than controlled by it.
 
 Kairos should minimize unnecessary collection and processing of personal activity information.
 
-Where technically feasible, sensitive behavorial processing should occur locally on the user's device.
+Where technically feasible, sensitive behavioral processing should occur locally on the user's device.
 
 Users should understand what information is being used and why.
 
@@ -304,7 +308,7 @@ Users can understand why Kairos made a recommendation and make an informed decis
 
 Kairos should be designed with neurodivergent experiences in mind without requiring users to identify themselves through a diagnosis.
 
-The product should be useable by people who simply recognize that they benefit from additional support with:
+The product should be usable by people who simply recognize that they benefit from additional support with:
 
 - Attention
 - Time
@@ -321,9 +325,9 @@ Users receive support based on what they need rather than which label they have.
 
 ---
 
-### Goal 15: Make Accessability Foundational
+### Goal 15: Make Accessibility Foundational
 
-Accessability should influence the design and architecture of Kairos from the beginning.
+Accessibility should influence the design and architecture of Kairos from the beginning.
 
 The product should consider differences involving:
 
@@ -369,9 +373,9 @@ Kairos is not intended to replace:
 - Psychologists
 - Psychiatrists
 - Occupational therapists
-- Other qualified professiosals
+- Other qualified professionals
 
-Product messaging should avoid presneting Kairos as treatment for a medical or psychological condition.
+Product messaging should avoid presenting Kairos as treatment for a medical or psychological condition.
 
 ---
 
@@ -618,9 +622,9 @@ Possible MVP Capability
 
 Maintain a persistent current-task widget and provide
 progressive focus reminders.
-
-Product goals describe what outcome matters.
 ```
+
+Product goals describe **what outcome matters**.
 
 MVP requirements will determine what minimum capability is needed
 to begin testing whether Kairos can produce that outcome.
@@ -671,7 +675,7 @@ A significant change should document:
 
 Major scope decisions should also be recorded in:
 
-[docs/07-decisions/DECISION_LOG.md](docs/07-decisions/DECISION_LOG.md)
+[../07-decisions/DECISION_LOG.md](../07-decisions/DECISION_LOG.md)
 
 ---
 
