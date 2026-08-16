@@ -26,9 +26,9 @@ MVP-specific scope will be defined separately in:
 
 ---
 
-# 2. Product Goals
+## 2. Product Goals
 
-## Goal 1: Help Users Direct Their Attention Intentionally
+### Goal 1: Help Users Direct Their Attention Intentionally
 
 Kairos should help users identify what deserves their attention at a given moment.
 
@@ -48,7 +48,7 @@ Users spend less time determining what they should be doing and more time intent
 
 ---
 
-## Goal 2: Help Users Recover From Distraction
+### Goal 2: Help Users Recover From Distraction
 
 Kairos should help users recognize when their attention has shifted awat from an intended activity.
 
@@ -68,7 +68,7 @@ A distraction is less likely to result in an abandoned or incomplete task.
 
 ---
 
-## Goal 3: Support Healthy Deep Focus
+### Goal 3: Support Healthy Deep Focus
 
 Kairos should recognize that sustained concentration can be valuable.
 
@@ -91,7 +91,7 @@ Users can benefit from periods of deep concentration without unintentionally scr
 
 ---
 
-## Goal 4: Improve Time Awareness
+### Goal 4: Improve Time Awareness
 
 Kairos should help users better understand the relationship between:
 
@@ -111,7 +111,7 @@ Users are less frequently surprised by how much time has passed or how little ti
 
 ---
 
-## Goal 5: Support Better Prioritization
+### Goal 5: Support Better Prioritization
 
 Kairos should help users evaluate competing responsibilities without removing their authority to determine what matters.
 
@@ -136,7 +136,7 @@ Important responsibilities are less likely to be delayed because the user was un
 
 ---
 
-## Goal 6: Reduce Task Initiation Friction
+### Goal 6: Reduce Task Initiation Friction
 
 Kairos should help users move from:
 
@@ -156,7 +156,7 @@ Users experience less friction between deciding that something needs to be done 
 
 ---
 
-## Goal 7: Support Transitions Between Activities
+### Goal 7: Support Transitions Between Activities
 
 Kairos should treat transitions as a process rather than a single notification at the moment an activity is supposed to change.
 
@@ -174,7 +174,7 @@ Users are less likely to miss or significantly delay upcoming responsibilities b
 
 ---
 
-## Goal 8: Help Users Recover When Plans Change
+### Goal 8: Help Users Recover When Plans Change
 
 Kairos should remain useful when the user's original schedule becomes unrealistic.
 
@@ -195,7 +195,7 @@ A disrupted schedule does not automatically cause the remainder of the user's pl
 
 ---
 
-## Goal 9: Personalize the User Experience
+### Goal 9: Personalize the User Experience
 
 Kairos should provide an experience that can adapt to different users without relying primarily on age-based assumptions.
 
@@ -220,7 +220,7 @@ Users can create a Kairos experience that feels appropriate for their needs, pre
 
 ---
 
-## Goal 10: Learn From the User Over Time
+### Goal 10: Learn From the User Over Time
 
 Long-term versions of Kairos should become more useful as the user interacts with the system.
 
@@ -246,7 +246,7 @@ Kairos recommendations become increasingly relevant to the individual rather tha
 
 ---
 
-## Goal 11: Preserve User Autonomy
+### Goal 11: Preserve User Autonomy
 
 Kairos should help users direct their own behavior rather than making decisions on their behalf.
 
@@ -267,7 +267,7 @@ Users feel assisted by Kairos rather than controlled by it.
 
 ---
 
-## Goal 12: Protect User Privacy
+### Goal 12: Protect User Privacy
 
 Kairos should minimize unnecessary collection and processing of personal activity information.
 
@@ -281,7 +281,7 @@ Users can benefit from adaptive assistance without unnecessarily surrendering pr
 
 ---
 
-## Goal 13: Provide Explainable Assistance
+### Goal 13: Provide Explainable Assistance
 
 Meaningful recommendations should have understandable reasoning available to the user.
 
@@ -300,7 +300,7 @@ Users can understand why Kairos made a recommendation and make an informed decis
 
 ---
 
-## Goal 14: Support a Broad Range of Users
+### Goal 14: Support a Broad Range of Users
 
 Kairos should be designed with neurodivergent experiences in mind without requiring users to identify themselves through a diagnosis.
 
@@ -321,7 +321,7 @@ Users receive support based on what they need rather than which label they have.
 
 ---
 
-## Goal 15: Make Accessability Foundational
+### Goal 15: Make Accessability Foundational
 
 Accessability should influence the design and architecture of Kairos from the beginning.
 
@@ -341,9 +341,9 @@ Accessibility does not require users to wait for a later "accessibility update" 
 
 ---
 
-# 3. Product Non-Goals
+## 3. Product Non-Goals
 
-## Non-Goal 1: Diagnosing Neurodivergence
+### Non-Goal 1: Diagnosing Neurodivergence
 
 Kairos should not attempt to determine whether a user has:
 
@@ -360,7 +360,7 @@ It should not attempt to determine why that need exists.
 
 ---
 
-## Non-Goal 2: Providing Medical or Psychological Treatment
+### Non-Goal 2: Providing Medical or Psychological Treatment
 
 Kairos is not intended to replace:
 
@@ -375,7 +375,7 @@ Product messaging should avoid presneting Kairos as treatment for a medical or p
 
 ---
 
-## Non-Goal 3: Maximizing Productivity
+### Non-Goal 3: Maximizing Productivity
 
 Kairos should not attempt to make users productive during every available moment.
 
@@ -396,7 +396,7 @@ It does not exist to maximize work output.
 
 ---
 
-## Non-Goal 4: Eliminating All Distractions
+### Non-Goal 4: Eliminating All Distractions
 
 Distraction is not inherently a product failure.
 
@@ -410,7 +410,7 @@ Kairos should focus on helping users recognize and recover from unwanted distrac
 
 ---
 
-## Non-Goal 5: Making Decisions for the User
+### Non-Goal 5: Making Decisions for the User
 
 Kairos may recommend:
 
@@ -428,7 +428,7 @@ delegated a specific action to Kairos.
 
 ---
 
-## Non-Goal 6: Becoming Surveillance Software
+### Non-Goal 6: Becoming Surveillance Software
 
 Kairos should not become a system primarily designed to monitor
 computer activity for another person's benefit.
@@ -443,7 +443,7 @@ parental-surveillance, or activity-spying platform.
 
 ---
 
-## Non-Goal 7: Replacing Dedicated Parental-Control Software
+### Non-Goal 7: Replacing Dedicated Parental-Control Software
 
 Kairos may eventually provide guardian-supported experiences for
 younger users.
@@ -465,7 +465,7 @@ Kairos.
 
 ---
 
-## Non-Goal 8: Replacing Every Productivity Application
+### Non-Goal 8: Replacing Every Productivity Application
 
 Kairos does not need to recreate every capability provided by:
 
@@ -481,7 +481,7 @@ existing tools rather than replace them.
 
 ---
 
-## Non-Goal 9: Requiring Artificial Intelligence for Core Use
+### Non-Goal 9: Requiring Artificial Intelligence for Core Use
 
 Kairos may eventually use AI for advanced assistance.
 
@@ -501,7 +501,7 @@ external AI service.
 
 ---
 
-## Non-Goal 10: Making AI an Unquestionable Authority
+### Non-Goal 10: Making AI an Unquestionable Authority
 
 AI-generated recommendations should not be presented as guaranteed
 facts.
@@ -517,7 +517,7 @@ Kairos should communicate uncertainty when appropriate.
 
 ---
 
-## Non-Goal 11: Forcing a Childlike Experience on Younger Users
+### Non-Goal 11: Forcing a Childlike Experience on Younger Users
 
 Younger users should not automatically receive an interface that is
 overly simplified, cartoonish, or childish.
@@ -534,7 +534,7 @@ communication style.
 
 ---
 
-## Non-Goal 12: Forcing a Professional Experience on Adults
+### Non-Goal 12: Forcing a Professional Experience on Adults
 
 Adult users should not be restricted to minimal or corporate visual
 experiences.
@@ -552,7 +552,7 @@ maturity.
 
 ---
 
-## Non-Goal 13: Encouraging Dependence on Kairos
+### Non-Goal 13: Encouraging Dependence on Kairos
 
 Kairos should not intentionally create unnecessary interactions to
 increase engagement metrics.
@@ -564,7 +564,7 @@ Kairos should be capable of becoming quieter when appropriate.
 
 ---
 
-## Non-Goal 14: Automatically Sending Detailed Activity Data to the Cloud
+### Non-Goal 14: Automatically Sending Detailed Activity Data to the Cloud
 
 Kairos should not assume that detailed computer activity needs to be
 stored or processed remotely.
@@ -579,7 +579,7 @@ technically reasonable.
 
 ---
 
-# 4. Goals Versus MVP Scope
+## 4. Goals Versus MVP Scope
 
 The goals in this document describe the intended direction of Kairos.
 
@@ -627,7 +627,7 @@ to begin testing whether Kairos can produce that outcome.
 
 ---
 
-# 5. Scope Decision Framework
+## 5. Scope Decision Framework
 
 When considering a new capability, the product team should ask:
 
@@ -647,7 +647,7 @@ product goal, it should not automatically enter the product backlog.
 
 ---
 
-# 6. Scope Change Policy
+## 6. Scope Change Policy
 
 Goals and non-goals may change as Kairos progresses through:
 
@@ -675,7 +675,7 @@ Major scope decisions should also be recorded in:
 
 ---
 
-# 7. Current Scope Position
+## 7. Current Scope Position
 
 Kairos is currently in Product Discovery and Planning.
 
