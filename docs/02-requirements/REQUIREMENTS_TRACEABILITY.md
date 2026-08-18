@@ -51,34 +51,34 @@ Direct user testing is still required.
 
 ## 3. Functional Requirements
 
-| ID      | Requirement                     | Research | Evidence   |  MVP   |
-| ------- | ------------------------------- | -------- | ---------- | :----: |
-| FR-FI01 | Create focus intention          | RQ-P01   | Partial    |  Yes   |
-| FR-FI02 | Display current intention       | RQ-P04   | Hypothesis |  Yes   |
-| FR-FI03 | Update intention                | RQ-E03   | Partial    |  Yes   |
-| FR-TM01 | Display remaining time          | RQ-T01   | Partial    |  Yes   |
-| FR-TM02 | Transition warnings             | RQ-TR02  | Partial    |  Yes   |
-| FR-TM03 | Extend focus time               | RQ-TR01  | Hypothesis |  Yes   |
-| FR-AA01 | Detect active application       | RQ-PR01  | Technical  |  Yes   |
-| FR-AA02 | Define expected applications    | RQ-PR01  | Hypothesis |  Yes   |
-| FR-AA03 | Detect possible attention drift | RQ-P03   | Hypothesis |  Yes   |
-| FR-AA04 | Correct activity interpretation | RQ-E03   | Partial    |  Yes   |
-| FR-PI01 | Ambient intervention            | RQ-I01   | Hypothesis |  Yes   |
-| FR-PI02 | Direct prompt                   | RQ-I01   | Hypothesis |  Yes   |
-| FR-PI03 | Focus intervention              | RQ-I02   | Hypothesis |  Yes   |
-| FR-PI04 | Intervention control            | RQ-I01   | Partial    |  Yes   |
-| FR-AR01 | Preserve task context           | RQ-P04   | Supported  |  Yes   |
-| FR-AR02 | Support return to intention     | RQ-P04   | Partial    |  Yes   |
-| FR-AR03 | Allow plan changes              | RQ-E03   | Partial    |  Yes   |
-| FR-TR01 | Prepare for transition          | RQ-TR02  | Partial    |  Yes   |
-| FR-TR02 | End-of-session decision         | RQ-TR01  | Hypothesis |  Yes   |
-| FR-TR03 | Preserve unfinished context     | RQ-TR03  | Supported  |  Yes   |
-| FR-LP01 | Basic task planning             | RQ-P01   | Partial    |  Yes   |
-| FR-LP02 | Basic priority                  | RQ-P01   | Partial    | Should |
-| FR-LP03 | Reschedule incomplete activity  | RQ-PL04  | Partial    |  Yes   |
-| FR-BC01 | Background operation            | RQ-AR01  | Hypothesis |  Yes   |
-| FR-BC02 | Lightweight desktop presence    | RQ-AR01  | Hypothesis |  Yes   |
-| FR-BC03 | Prominent intervention          | RQ-I02   | Hypothesis |  Yes   |
+| ID      | Requirement                     | Research           | Evidence   |  MVP   |
+| ------- | ------------------------------- | ------------------ | ---------- | :----: |
+| FR-FI01 | Create focus intention          | RQ-P01             | Partial    |  Yes   |
+| FR-FI02 | Display current intention       | RQ-P04             | Hypothesis |  Yes   |
+| FR-FI03 | Update intention                | RQ-E03             | Partial    |  Yes   |
+| FR-TM01 | Display remaining time          | RQ-T01             | Partial    |  Yes   |
+| FR-TM02 | Transition warnings             | RQ-TR02            | Partial    |  Yes   |
+| FR-TM03 | Extend focus time               | RQ-TR01            | Hypothesis |  Yes   |
+| FR-AA01 | Detect active application       | RQ-PR01            | Technical  |  Yes   |
+| FR-AA02 | Define expected applications    | RQ-PR01            | Hypothesis |  Yes   |
+| FR-AA03 | Detect possible attention drift | RQ-P03             | Hypothesis |  Yes   |
+| FR-AA04 | Correct activity interpretation | RQ-E03             | Partial    |  Yes   |
+| FR-PI01 | Ambient intervention            | RQ-I01             | Hypothesis |  Yes   |
+| FR-PI02 | Direct prompt                   | RQ-I01             | Hypothesis |  Yes   |
+| FR-PI03 | Focus intervention              | RQ-I02             | Hypothesis |  Yes   |
+| FR-PI04 | Intervention control            | RQ-I01             | Partial    |  Yes   |
+| FR-AR01 | Preserve task context           | RQ-P04             | Supported  |  Yes   |
+| FR-AR02 | Support return to intention     | RQ-P04             | Partial    |  Yes   |
+| FR-AR03 | Allow plan changes              | RQ-E03             | Partial    |  Yes   |
+| FR-TR01 | Prepare for transition          | RQ-TR02            | Partial    |  Yes   |
+| FR-TR02 | End-of-session decision         | RQ-TR01            | Hypothesis |  Yes   |
+| FR-TR03 | Preserve unfinished context     | RQ-TR03            | Supported  |  Yes   |
+| FR-LP01 | Basic task planning             | RQ-P01             | Partial    |  Yes   |
+| FR-LP02 | Basic priority                  | RQ-P01             | Partial    | Should |
+| FR-LP03 | Reschedule incomplete activity  | RQ-PL04            | Partial    |  Yes   |
+| FR-BC01 | Background operation            | Product Hypothesis | Hypothesis |  Yes   |
+| FR-BC02 | Lightweight desktop presence    | Product Hypothesis | Hypothesis |  Yes   |
+| FR-BC03 | Prominent intervention          | RQ-I02             | Hypothesis |  Yes   |
 
 ---
 
