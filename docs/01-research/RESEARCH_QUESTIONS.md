@@ -1082,13 +1082,13 @@ questions have reasonable evidence.
 
 Before finalizing MVP scope, obtain evidence regarding:
 
-- RQ-P01
-- RQ-P02
-- RQ-P03
-- RQ-P04
-- RQ-P05
-- RQ-T01
-- RQ-TR01
+- [RQ-P01](#rq-p01-prioritization-frequency)
+- [RQ-P02](#rq-p02-prioritization-consequences)
+- [RQ-P03](#rq-p03-attention-drift)
+- [RQ-P04](#rq-p04-attention-recovery-information)
+- [RQ-P05](#rq-p05-deep-focus-and-hyperfocus)
+- [RQ-T01](#rq-t01-time-awareness)
+- [RQ-TR01](#rq-tr01-transition-difficulty)
 
 #### Gate Question
 
@@ -1102,11 +1102,11 @@ Before finalizing MVP scope, obtain evidence regarding:
 Before finalizing focus and intervention UX, obtain evidence
 regarding:
 
-- RQ-I01
-- RQ-I02
-- RQ-I04
-- RQ-TR02
-- RQ-AR03
+- [RQ-I01](#rq-i01-helpful-intervention)
+- [RQ-I02](#rq-i02-escalation)
+- [RQ-I04](#rq-i04-strict-focus)
+- [RQ-TR02](#rq-tr02-transition-warning)
+- [RQ-AR03](#rq-ar03-trust)
 
 #### Gate Question
 
@@ -1120,11 +1120,11 @@ regarding:
 Before implementing advanced activity monitoring, obtain evidence
 regarding:
 
-- RQ-PR01
-- RQ-PR02
-- RQ-PR03
-- RQ-PR04
-- RQ-TECH03
+- [RQ-PR01](#rq-pr01-activity-awareness)
+- [RQ-PR02](#rq-pr02-local-processing)
+- [RQ-PR03](#rq-pr03-sensitive-applications)
+- [RQ-PR04](#rq-pr04-data-retention)
+- [RQ-TECH03](#rq-tech03-activity-detection)
 
 #### Gate Question
 
@@ -1138,10 +1138,10 @@ regarding:
 Before releasing Kairos for users under 18, obtain appropriate
 evidence regarding:
 
-- RQ-Y01
-- RQ-Y02
-- RQ-Y03
-- RQ-Y04
+- [RQ-Y01](#rq-y01-guardian-role)
+- [RQ-Y02](#rq-y02-youth-privacy)
+- [RQ-Y03](#rq-y03-transparency)
+- [RQ-Y04](#rq-y04-guardian-restrictions)
 
 Relevant legal and regulatory requirements must also be investigated.
 
@@ -1156,9 +1156,9 @@ Relevant legal and regulatory requirements must also be investigated.
 
 Before committing to an implementation architecture, investigate:
 
-- RQ-TECH01
-- RQ-TECH02
-- RQ-TECH03
+- [RQ-TECH01](#rq-tech01-background-operation)
+- [RQ-TECH02](#rq-tech02-overlay-capability)
+- [RQ-TECH03](#rq-tech03-activity-detection)
 
 #### Gate Question
 
