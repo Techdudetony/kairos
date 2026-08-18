@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Kairos.Desktop.ViewModels;
 using Kairos.Desktop.Views;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Kairos.Desktop;
 
@@ -17,9 +18,14 @@ public partial class App : Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
+            var services = new ServiceCollection();
+            services.AddKairosServices();
+
+            var provider = services.BuildServiceProvider();
+
             desktop.MainWindow = new MainWindow
             {
-                DataContext = new MainViewModel(),
+                DataContext = provider.GetRequiredService<MainViewModel>(),
             };
         }
 
