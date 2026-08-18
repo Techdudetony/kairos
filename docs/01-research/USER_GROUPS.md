@@ -75,7 +75,7 @@ diagnostic assumptions.
 
 ---
 
-# 3. Initial Research Cohorts
+## 3. Initial Research Cohorts
 
 The initial research strategy will focus on three broad cohorts.
 
@@ -93,13 +93,13 @@ boundaries.
 
 ---
 
-# 4. Cohort A: Student Users
+## 4. Cohort A: Student Users
 
-## Approximate Age
+### Approximate Age
 
 10 to 17
 
-## Primary Context
+### Primary Context
 
 Student users may use the same computer for:
 
@@ -116,7 +116,7 @@ Student users may use the same computer for:
 This creates an environment where required activities and highly
 engaging alternatives may exist immediately beside one another.
 
-## Potential Responsibilities
+### Potential Responsibilities
 
 Responsibilities may include:
 
@@ -136,7 +136,7 @@ Some responsibilities may be externally structured by:
 - Coaches
 - Other adults
 
-## Initial Research Interests
+### Initial Research Interests
 
 Research with this cohort should explore:
 
@@ -151,7 +151,7 @@ Research with this cohort should explore:
 - How visual customization affects willingness to use the product
 - How guardian involvement affects trust and autonomy
 
-## Guardian Considerations
+### Guardian Considerations
 
 This cohort introduces additional questions involving:
 
@@ -170,7 +170,7 @@ Guardian functionality should not automatically imply surveillance.
 Research should explore how Kairos can support younger users while
 preserving appropriate autonomy and trust.
 
-## Assumptions Requiring Validation
+### Assumptions Requiring Validation
 
 We currently hypothesize that:
 
@@ -188,13 +188,13 @@ These are hypotheses, not established findings.
 
 ---
 
-# 5. Cohort B: College and Early-Career Users
+## 5. Cohort B: College and Early-Career Users
 
-## Approximate Age
+### Approximate Age
 
 18 to 24
 
-## Primary Context
+### Primary Context
 
 Users in this cohort may experience significantly more independence
 than they had during earlier education.
@@ -214,7 +214,7 @@ They may be responsible for independently managing:
 External structure may be reduced while the number of competing
 responsibilities increases.
 
-## Potential Responsibilities
+### Potential Responsibilities
 
 Responsibilities may include:
 
@@ -229,7 +229,7 @@ Responsibilities may include:
 - Financial responsibilities
 - Personal projects
 
-## Initial Research Interests
+### Initial Research Interests
 
 Research with this cohort should explore:
 
@@ -244,7 +244,7 @@ Research with this cohort should explore:
 - How much intervention users want
 - Whether users want Kairos to learn from previous behavior
 
-## Independence Considerations
+### Independence Considerations
 
 Users in this cohort may have greater responsibility for creating
 their own structure.
@@ -259,7 +259,7 @@ Research should explore whether Kairos is most useful as:
 The product should not assume that increased independence means the
 user requires less support.
 
-## Assumptions Requiring Validation
+### Assumptions Requiring Validation
 
 We currently hypothesize that:
 
@@ -276,13 +276,13 @@ These are hypotheses, not established findings.
 
 ---
 
-# 6. Cohort C: Working Adults
+## 6. Cohort C: Working Adults
 
-## Approximate Age
+### Approximate Age
 
 25 and older
 
-## Primary Context
+### Primary Context
 
 Working adults may need to balance multiple areas of responsibility
 within the same day.
@@ -302,7 +302,7 @@ These may include:
 Remote and hybrid work may further combine professional and personal
 activities within the same physical and digital environment.
 
-## Potential Responsibilities
+### Potential Responsibilities
 
 Responsibilities may include:
 
@@ -317,7 +317,7 @@ Responsibilities may include:
 - Personal projects
 - Continuing education
 
-## Initial Research Interests
+### Initial Research Interests
 
 Research with this cohort should explore:
 
@@ -332,7 +332,7 @@ Research with this cohort should explore:
 - How much activity awareness users consider acceptable
 - How privacy expectations affect adoption
 
-## Work Context Considerations
+### Work Context Considerations
 
 Research should distinguish between:
 
@@ -349,7 +349,7 @@ requirements.
 Kairos should not assume that all working adults follow a traditional
 weekday office schedule.
 
-## Assumptions Requiring Validation
+### Assumptions Requiring Validation
 
 We currently hypothesize that:
 
@@ -368,7 +368,7 @@ These are hypotheses, not established findings.
 
 ---
 
-# 7. Cross-Cohort Support Needs
+## 7. Cross-Cohort Support Needs
 
 Age and life context alone are unlikely to explain what type of Kairos
 experience a user needs.
@@ -379,7 +379,7 @@ A user may experience one or several of the following.
 
 ---
 
-## Prioritization Support
+### Prioritization Support
 
 The user knows several things need to be completed but struggles to
 determine what deserves attention first.
@@ -390,7 +390,7 @@ Example:
 
 ---
 
-## Attention Recovery Support
+### Attention Recovery Support
 
 The user becomes distracted and loses awareness of their original
 intention.
@@ -402,7 +402,7 @@ Example:
 
 ---
 
-## Transition Support
+### Transition Support
 
 The user knows another activity requires attention but has difficulty
 disengaging from the current activity.
@@ -414,7 +414,7 @@ Example:
 
 ---
 
-## Time Awareness Support
+### Time Awareness Support
 
 The user has difficulty recognizing how much time has passed or how
 much remains.
@@ -425,7 +425,7 @@ Example:
 
 ---
 
-## Task Initiation Support
+### Task Initiation Support
 
 The user understands what needs to be completed but struggles to
 begin.
@@ -436,7 +436,7 @@ Example:
 
 ---
 
-## Planning Support
+### Planning Support
 
 The user understands the desired outcome but struggles to identify the
 steps required to reach it.
@@ -447,7 +447,7 @@ Example:
 
 ---
 
-## Schedule Recovery Support
+### Schedule Recovery Support
 
 The user's original plan becomes unrealistic and they struggle to
 determine how to reorganize the remaining time.
@@ -459,28 +459,28 @@ Example:
 
 ---
 
-# 8. Support Intensity
+## 8. Support Intensity
 
 Research should also examine how much assistance users want from
 Kairos.
 
 Initial conceptual levels include:
 
-## Low Support
+### Low Support
 
 The user primarily wants ambient awareness and lightweight reminders.
 
-## Moderate Support
+### Moderate Support
 
 The user wants reminders and progressive intervention when attention
 or timing begins to drift.
 
-## High Support
+### High Support
 
 The user wants Kairos to participate more actively in maintaining
 structure and supporting transitions.
 
-## Strict Support
+### Strict Support
 
 The user intentionally delegates stronger intervention capabilities
 to Kairos, potentially including restrictions during selected focus
@@ -492,7 +492,7 @@ They should not be assumed to represent final user-facing language.
 
 ---
 
-# 9. Support Need Is Not Ability
+## 9. Support Need Is Not Ability
 
 The amount of support a user wants should not be interpreted as a
 measure of intelligence, maturity, capability, or independence.
@@ -525,7 +525,7 @@ assigning a permanent support level to the user.
 
 ---
 
-# 10. Age and Experience
+## 10. Age and Experience
 
 Age remains relevant to Kairos, but it should not automatically
 determine the user experience.
@@ -554,7 +554,7 @@ assuming preferences based on age.
 
 ---
 
-# 11. Overlapping User Contexts
+## 11. Overlapping User Contexts
 
 The research cohorts should not be treated as mutually exclusive
 personas.
@@ -573,7 +573,7 @@ user into one permanent category.
 
 ---
 
-# 12. Initial Research Matrix
+## 12. Initial Research Matrix
 
 The following matrix summarizes areas of particular interest during
 early research.
@@ -600,7 +600,7 @@ Research findings may significantly change this matrix.
 
 ---
 
-# 13. Initial Research Priorities
+## 13. Initial Research Priorities
 
 Early research should attempt to answer:
 
@@ -625,7 +625,7 @@ These questions will be expanded in:
 
 ---
 
-# 14. Recruitment Considerations
+## 14. Recruitment Considerations
 
 Future research recruitment should attempt to include variation in:
 
@@ -647,7 +647,7 @@ experience.
 
 ---
 
-# 15. Research Ethics
+## 15. Research Ethics
 
 Research involving younger users requires additional care.
 
@@ -670,7 +670,7 @@ question.
 
 ---
 
-# 16. Open Questions
+## 16. Open Questions
 
 The following questions remain unresolved:
 
@@ -690,7 +690,7 @@ evidence to make stronger decisions.
 
 ---
 
-# 17. Current Research Position
+## 17. Current Research Position
 
 The three initial research cohorts are:
 

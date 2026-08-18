@@ -54,7 +54,7 @@ Initial needs are organized into three levels.
 
 ### Primary Needs
 
-Needs directly associated with the primary Kairos problem ares:
+Needs directly associated with the primary Kairos problem areas:
 
 - [Prioritization](#4-primary-need-prioritization)
 - [Attention Recovery](#5-primary-need-attention-recovery)
@@ -206,7 +206,7 @@ Meeting this need may help users:
 - Recognize intended stopping points.
 - Take appropriate breaks.
 - Reduce mental fatigue.
-- Reduce physical faitgue.
+- Reduce physical fatigue.
 - Prepare for upcoming activities.
 - Preserve the benefits of deep concentration.
 
