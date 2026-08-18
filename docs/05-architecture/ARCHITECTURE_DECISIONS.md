@@ -498,6 +498,15 @@ Business logic should not be implemented directly inside Views.
 
 ViewModels should not directly perform Windows API operations.
 
+Custom Kairos controls and companion surfaces must preserve platform
+accessibility behavior.
+
+Where standard Avalonia automation behavior is insufficient, custom
+automation properties or automation peers should be implemented.
+
+Accessibility must be validated through keyboard navigation and
+Windows assistive-technology testing.
+
 ---
 
 # ADR-007: Minimum Observation
