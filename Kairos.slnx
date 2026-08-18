@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Kairos.Application/Kairos.Application.csproj" />
+    <Project Path="src/Kairos.Desktop/Kairos.Desktop.csproj" />
+    <Project Path="src/Kairos.Domain/Kairos.Domain.csproj" />
+    <Project Path="src/Kairos.Infrastructure/Kairos.Infrastructure.csproj" />
+    <Project Path="src/Kairos.Platform.Windows/Kairos.Platform.Windows.csproj" />
+  </Folder>
+</Solution>
