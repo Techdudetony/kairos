@@ -1,5 +1,6 @@
 using Kairos.Desktop.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 
 namespace Kairos.Desktop;
 
@@ -10,8 +11,11 @@ namespace Kairos.Desktop;
 /// </summary>
 internal static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddKairosServices(this IServiceCollection services)
+    public static IServiceCollection AddKairosServices(this IServiceCollection services, ILoggerFactory loggerFactory)
     {
+        services.AddSingleton(loggerFactory);
+        services.AddSingleton(typeof(ILogger<>), typeof(Logger<>));
+
         services.AddTransient<MainViewModel>();
 
         return services;
