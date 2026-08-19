@@ -43,7 +43,7 @@ Major decisions are documented separately in:
 | Dependency Injection | Microsoft.Extensions.DependencyInjection |
 | Logging              | Microsoft.Extensions.Logging + Serilog   |
 | Unit Testing         | xUnit                                    |
-| Assertions           | FluentAssertions                         |
+| Assertions           | Shouldly                                 |
 | Mocking              | NSubstitute                              |
 | CI                   | GitHub Actions                           |
 | Source Control       | Git + GitHub                             |
@@ -294,7 +294,9 @@ Logs must not contain sensitive user content unnecessarily.
 
 ### Assertions
 
-**FluentAssertions**
+**Shouldly**
+
+_(FluentAssertions 8.x moved to a dual license requiring a paid subscription for commercial use as of the Xceed acquisition; Shouldly (MIT) was selected instead to keep Kairos's testing stack free for any future use case.)_
 
 ### Mocking
 
