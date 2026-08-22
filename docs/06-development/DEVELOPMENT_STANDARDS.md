@@ -32,7 +32,7 @@ Formatting is defined in the repository's root [`.editorconfig`](../../.editorco
 Before committing, run:
 
 ```bash
-dotnet format Kairos.slnx --verify-no-changes
+dotnet format Kairos.slnx --verify-no-changes --severity info
 ```
 
 ---
