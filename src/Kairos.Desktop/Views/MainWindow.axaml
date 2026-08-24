@@ -7,27 +7,36 @@
         d:DesignWidth="800"
         d:DesignHeight="450"
         x:Class="Kairos.Desktop.Views.MainWindow"
-        x:DataType="vm:MainViewModel"
+        x:DataType="vm:CreateFocusIntentionViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="Kairos">
 
     <Design.DataContext>
-        <vm:MainViewModel />
+        <vm:CreateFocusIntentionViewModel />
     </Design.DataContext>
 
-    <StackPanel HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Spacing="8">
+    <StackPanel Margin="16" Spacing="8">
 
-        <TextBlock Text="{Binding ApplicationName}"
-                   HorizontalAlignment="Center"
-                   FontSize="32"
-                   FontWeight="SemiBold" />
+        <TextBlock Text="Kairos" FontSize="24" FontWeight="SemiBold" />
 
-        <TextBlock Text="{Binding Status}"
-                   HorizontalAlignment="Center"
-                   FontSize="16"
-                   Opacity="0.7" />
+        <TextBlock Text="Task name" />
+        <TextBox Text="{Binding TaskName}" />
+
+        <TextBlock Text="Planned duration (minutes)" />
+        <NumericUpDown Value="{Binding PlannedDurationMinutes}" Minimum="1" />
+
+        <TextBlock Text="Task context (optional)" />
+        <TextBox Text="{Binding TaskContext}" />
+
+        <TextBlock Text="Expected applications (optional, comma-separated)" />
+        <TextBox Text="{Binding ExpectedApplicationsInput}" />
+
+        <Button Content="Start" Command="{Binding StartCommand}" Margin="0,8,0,0" />
+
+        <ItemsControl ItemsSource="{Binding ValidationMessages}" />
+
+        <TextBlock Text="{Binding ActiveSession.State}"
+                    IsVisible="{Binding ActiveSession, Converter={x:Static ObjectConverters.IsNotNull}}" />
 
     </StackPanel>
 
