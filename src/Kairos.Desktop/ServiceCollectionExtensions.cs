@@ -1,3 +1,4 @@
+using Kairos.Application.FocusIntentions;
 using Kairos.Desktop.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -17,6 +18,8 @@ internal static class ServiceCollectionExtensions
         services.AddSingleton(typeof(ILogger<>), typeof(Logger<>));
 
         services.AddTransient<MainViewModel>();
+        services.AddTransient<CreateFocusIntentionHandler>();
+        services.AddTransient<CreateFocusIntentionViewModel>();
 
         return services;
     }

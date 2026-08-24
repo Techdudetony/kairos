@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Kairos.Desktop;
 
-public partial class App : Application
+public partial class App : Avalonia.Application
 {
     private ServiceProvider? _serviceProvider;
     private ILoggerFactory? _loggerFactory;
@@ -41,7 +41,7 @@ public partial class App : Application
 
             desktop.MainWindow = new MainWindow
             {
-                DataContext = _serviceProvider.GetRequiredService<MainViewModel>(),
+                DataContext = _serviceProvider.GetRequiredService<CreateFocusIntentionViewModel>(),
             };
         }
 
