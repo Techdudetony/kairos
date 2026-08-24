@@ -17,6 +17,9 @@ internal static class ServiceCollectionExtensions
         services.AddSingleton(loggerFactory);
         services.AddSingleton(typeof(ILogger<>), typeof(Logger<>));
 
+        services.AddSingleton<ActiveFocusSessionStore>();
+        services.AddSingleton<ActiveIntentionViewModel>();
+
         services.AddTransient<MainViewModel>();
         services.AddTransient<CreateFocusIntentionHandler>();
         services.AddTransient<CreateFocusIntentionViewModel>();

@@ -1,4 +1,5 @@
 using Avalonia;
+using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Kairos.Desktop.ViewModels;
@@ -12,6 +13,7 @@ public partial class App : Avalonia.Application
 {
     private ServiceProvider? _serviceProvider;
     private ILoggerFactory? _loggerFactory;
+
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
@@ -21,6 +23,8 @@ public partial class App : Avalonia.Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
+            desktop.ShutdownMode = ShutdownMode.OnLastWindowClose;
+
             _loggerFactory = LoggingBootstrapper.CreateLoggerFactory();
 
             var services = new ServiceCollection();
@@ -43,6 +47,12 @@ public partial class App : Avalonia.Application
             {
                 DataContext = _serviceProvider.GetRequiredService<CreateFocusIntentionViewModel>(),
             };
+
+            var activeIntentionWindow = new ActiveIntentionWindow
+            {
+                DataContext = _serviceProvider.GetRequiredService<ActiveIntentionViewModel>(),
+            };
+            activeIntentionWindow.Show();
         }
 
         base.OnFrameworkInitializationCompleted();
