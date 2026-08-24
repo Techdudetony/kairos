@@ -8,7 +8,7 @@ namespace Kairos.Desktop.Tests;
 public class CreateFocusIntentionViewModelTests
 {
     private static CreateFocusIntentionViewModel CreateViewModel() =>
-        new(new CreateFocusIntentionHandler());
+        new(new CreateFocusIntentionHandler(), new ActiveFocusSessionStore());
 
     [Fact]
     public void Start_with_valid_input_maps_fields_into_active_session()
@@ -96,5 +96,35 @@ public class CreateFocusIntentionViewModelTests
 
         viewModel.ActiveSession.ShouldBeNull();
         viewModel.ValidationMessages.ShouldNotBeEmpty();
+    }
+
+    [Fact]
+    public void Successful_start_publishes_the_session_to_the_active_focus_session_store()
+    {
+        var store = new ActiveFocusSessionStore();
+        var viewModel = new CreateFocusIntentionViewModel(new CreateFocusIntentionHandler(), store);
+        viewModel.TaskName = "Write report";
+        viewModel.PlannedDurationMinutes = 25;
+
+        viewModel.StartCommand.Execute(null);
+
+        store.Current.ShouldNotBeNull();
+        store.Current!.Intention.TaskName.ShouldBe("Write report");
+    }
+
+    [Fact]
+    public void Failed_start_does_not_clear_an_existing_session_in_the_active_focus_session_store()
+    {
+        var store = new ActiveFocusSessionStore();
+        var viewModel = new CreateFocusIntentionViewModel(new CreateFocusIntentionHandler(), store);
+        viewModel.TaskName = "Write report";
+        viewModel.PlannedDurationMinutes = 25;
+        viewModel.StartCommand.Execute(null);
+        var firstSession = store.Current;
+
+        viewModel.TaskName = string.Empty;
+        viewModel.StartCommand.Execute(null);
+
+        store.Current.ShouldBe(firstSession);
     }
 }

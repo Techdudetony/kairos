@@ -9,6 +9,7 @@ namespace Kairos.Desktop.ViewModels;
 public partial class CreateFocusIntentionViewModel : ViewModelBase
 {
     private readonly CreateFocusIntentionHandler _handler;
+    private readonly ActiveFocusSessionStore _activeFocusSessionStore;
 
     [ObservableProperty]
     private string _taskName = string.Empty;
@@ -27,9 +28,12 @@ public partial class CreateFocusIntentionViewModel : ViewModelBase
 
     public ObservableCollection<string> ValidationMessages { get; } = new();
 
-    public CreateFocusIntentionViewModel(CreateFocusIntentionHandler handler)
+    public CreateFocusIntentionViewModel(
+        CreateFocusIntentionHandler handler,
+        ActiveFocusSessionStore activeFocusSessionStore)
     {
         _handler = handler;
+        _activeFocusSessionStore = activeFocusSessionStore;
     }
 
     [RelayCommand]
@@ -55,6 +59,7 @@ public partial class CreateFocusIntentionViewModel : ViewModelBase
         if (result.IsSuccess)
         {
             ActiveSession = result.Value;
+            _activeFocusSessionStore.Set(result.Value!);
         }
         else
         {
