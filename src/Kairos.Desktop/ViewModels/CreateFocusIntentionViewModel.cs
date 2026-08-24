@@ -36,6 +36,7 @@ public partial class CreateFocusIntentionViewModel : ViewModelBase
     private void Start()
     {
         ValidationMessages.Clear();
+        ActiveSession = null;
 
         var expectedApplications = (ExpectedApplicationsInput ?? string.Empty)
             .Split(',')

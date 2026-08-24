@@ -79,4 +79,22 @@ public class CreateFocusIntentionViewModelTests
         viewModel.ActiveSession!.Intention.TaskContext.ShouldBeNull();
         viewModel.ActiveSession.Intention.ExpectedApplications.ShouldBeEmpty();
     }
+
+    [Fact]
+    public void Start_with_invalid_input_clears_previous_active_session()
+    {
+        var viewModel = CreateViewModel();
+        viewModel.TaskName = "Write report";
+        viewModel.PlannedDurationMinutes = 25;
+
+        viewModel.StartCommand.Execute(null);
+
+        viewModel.ActiveSession.ShouldNotBeNull();
+
+        viewModel.TaskName = string.Empty;
+        viewModel.StartCommand.Execute(null);
+
+        viewModel.ActiveSession.ShouldBeNull();
+        viewModel.ValidationMessages.ShouldNotBeEmpty();
+    }
 }

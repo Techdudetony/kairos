@@ -6,9 +6,9 @@ public sealed class Result<T>
     public T? Value { get; }
     public IReadOnlyList<string> Errors { get; }
 
-    private Result(bool isSucess, T? value, IReadOnlyList<string> errors)
+    private Result(bool isSuccess, T? value, IReadOnlyList<string> errors)
     {
-        IsSuccess = isSucess;
+        IsSuccess = isSuccess;
         Value = value;
         Errors = errors;
     }
