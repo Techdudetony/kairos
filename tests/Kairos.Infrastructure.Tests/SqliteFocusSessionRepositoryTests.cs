@@ -10,6 +10,26 @@ public class SqliteFocusSessionRepositoryTests : IDisposable
     private readonly string _databasePath;
     private readonly SqliteFocusSessionRepository _repository;
 
+    private void OverwriteStateColumn(string value)
+    {
+        using var connection = new Microsoft.Data.Sqlite.SqliteConnection($"Data Source={_databasePath};Pooling=False");
+        connection.Open();
+        using var command = connection.CreateCommand();
+        command.CommandText = "UPDATE ActiveFocusSession SET State = @State WHERE Id = 1;";
+        command.Parameters.AddWithValue("@State", value);
+        command.ExecuteNonQuery();
+    }
+
+    private void OverwriteExpectedApplicationsColumn(string value)
+    {
+        using var connection = new Microsoft.Data.Sqlite.SqliteConnection($"Data Source={_databasePath};Pooling=False");
+        connection.Open();
+        using var command = connection.CreateCommand();
+        command.CommandText = "UPDATE ActiveFocusSession SET ExpectedApplicationsJson = @Json WHERE Id = 1;";
+        command.Parameters.AddWithValue("@Json", value);
+        command.ExecuteNonQuery();
+    }
+
     public SqliteFocusSessionRepositoryTests()
     {
         _databasePath = Path.Combine(Path.GetTempPath(), $"kairos-test-{Guid.NewGuid()}.db");
@@ -139,5 +159,29 @@ public class SqliteFocusSessionRepositoryTests : IDisposable
         var intention = FocusIntention.Create("Write report", TimeSpan.FromMinutes(30));
 
         Should.NotThrow(() => repository.Save(FocusSession.Start(intention)));
+    }
+
+    [Fact]
+    public void Load_with_an_undefined_numeric_state_returns_null_without_throwing()
+    {
+        var intention = FocusIntention.Create("Write report", TimeSpan.FromMinutes(30));
+        _repository.Save(FocusSession.Start(intention));
+        OverwriteStateColumn("999");
+
+        var result = _repository.Load();
+
+        result.ShouldBeNull();
+    }
+
+    [Fact]
+    public void Load_with_json_null_expected_applications_returns_null_without_throwing()
+    {
+        var intention = FocusIntention.Create("Write report", TimeSpan.FromMinutes(30));
+        _repository.Save(FocusSession.Start(intention));
+        OverwriteExpectedApplicationsColumn("null");
+
+        var result = _repository.Load();
+
+        result.ShouldBeNull();
     }
 }

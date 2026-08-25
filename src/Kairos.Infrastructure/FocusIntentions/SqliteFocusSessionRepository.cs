@@ -49,13 +49,19 @@ public sealed class SqliteFocusSessionRepository : IFocusSessionRepository
             var expectedApplicationsJson = reader.GetString(3);
             var stateText = reader.GetString(4);
 
-            if (!Enum.TryParse<FocusSessionState>(stateText, out var state))
+            if (!Enum.TryParse<FocusSessionState>(stateText, out var state) || !Enum.IsDefined(state))
             {
                 _logger.LogWarning("Persisted focus session state {StateText} is not recognized; discarding.", stateText);
                 return null;
             }
 
             var expectedApplications = JsonSerializer.Deserialize<List<string>>(expectedApplicationsJson);
+
+            if (expectedApplications is null)
+            {
+                _logger.LogWarning("Persisted expected applications for the active focus session could not be read; discarding.");
+                return null;
+            }
 
             var intention = FocusIntention.Create(
                 taskName,
