@@ -22,4 +22,11 @@ public sealed record FocusSession
 
         return new FocusSession(updatedIntention, State);
     }
+
+    public static FocusSession Restore(FocusIntention intention, FocusSessionState state)
+    {
+        ArgumentNullException.ThrowIfNull(intention);
+
+        return new FocusSession(intention, state);
+    }
 }

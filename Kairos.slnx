@@ -10,5 +10,6 @@
     <Project Path="tests/Kairos.Application.Tests/Kairos.Application.Tests.csproj" />
     <Project Path="tests/Kairos.Desktop.Tests/Kairos.Desktop.Tests.csproj" />
     <Project Path="tests/Kairos.Domain.Tests/Kairos.Domain.Tests.csproj" />
+    <Project Path="tests/Kairos.Infrastructure.Tests/Kairos.Infrastructure.Tests.csproj" />
   </Folder>
 </Solution>

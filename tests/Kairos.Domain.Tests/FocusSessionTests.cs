@@ -36,4 +36,31 @@ public class FocusSessionTests
 
         Should.Throw<ArgumentNullException>(() => session.WithIntention(null!));
     }
+
+    [Fact]
+    public void Restore_preserves_the_supplied_intention()
+    {
+        var intention = FocusIntention.Create("Write report", TimeSpan.FromMinutes(30));
+
+        var session = FocusSession.Restore(intention, FocusSessionState.Companion);
+
+        session.Intention.ShouldBe(intention);
+    }
+
+    [Fact]
+    public void Restore_preserves_the_supplied_state()
+    {
+        var intention = FocusIntention.Create("Write report", TimeSpan.FromMinutes(30));
+
+        var session = FocusSession.Restore(intention, FocusSessionState.Companion);
+
+        session.State.ShouldBe(FocusSessionState.Companion);
+    }
+
+    [Fact]
+    public void Restore_rejects_null_intention()
+    {
+        Should.Throw<ArgumentNullException>(() =>
+            FocusSession.Restore(null!, FocusSessionState.Companion));
+    }
 }
