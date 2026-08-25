@@ -48,4 +48,20 @@ public class ActiveIntentionViewModelTests
 
         viewModel.ActiveSession.ShouldBe(secondSession);
     }
+
+    [Fact]
+    public void Reflects_an_edited_intention_after_a_successful_edit()
+    {
+        var store = new ActiveFocusSessionStore();
+        var viewModel = new ActiveIntentionViewModel(store);
+        var originalSession = FocusSession.Start(FocusIntention.Create("Write report", TimeSpan.FromMinutes(30)));
+        store.Set(originalSession);
+
+        var editHandler = new EditFocusIntentionHandler();
+        var editRequest = new EditFocusIntentionRequest(store.Current!, "Review PR");
+        var editResult = editHandler.Handle(editRequest);
+        store.Set(editResult.Value!);
+
+        viewModel.ActiveSession!.Intention.TaskName.ShouldBe("Review PR");
+    }
 }

@@ -2,6 +2,7 @@ using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Kairos.Application.FocusIntentions;
+using Kairos.Desktop.Common;
 using Kairos.Domain;
 
 namespace Kairos.Desktop.ViewModels;
@@ -42,11 +43,7 @@ public partial class CreateFocusIntentionViewModel : ViewModelBase
         ValidationMessages.Clear();
         ActiveSession = null;
 
-        var expectedApplications = (ExpectedApplicationsInput ?? string.Empty)
-            .Split(',')
-            .Select(app => app.Trim())
-            .Where(app => app.Length > 0)
-            .ToList();
+        var expectedApplications = ExpectedApplicationsParser.Parse(ExpectedApplicationsInput);
 
         var request = new CreateFocusIntentionRequest(
             TaskName,

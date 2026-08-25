@@ -23,6 +23,7 @@ internal static class ServiceCollectionExtensions
         services.AddTransient<MainViewModel>();
         services.AddTransient<CreateFocusIntentionHandler>();
         services.AddTransient<CreateFocusIntentionViewModel>();
+        services.AddTransient<EditFocusIntentionHandler>();
 
         return services;
     }
