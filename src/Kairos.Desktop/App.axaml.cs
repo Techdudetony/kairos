@@ -1,7 +1,7 @@
-using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using Kairos.Application.FocusIntentions;
 using Kairos.Desktop.ViewModels;
 using Kairos.Desktop.Views;
 using Microsoft.Extensions.DependencyInjection;
@@ -52,6 +52,9 @@ public partial class App : Avalonia.Application
             {
                 DataContext = _serviceProvider.GetRequiredService<ActiveIntentionViewModel>(),
             };
+            activeIntentionWindow.Initialize(
+                _serviceProvider.GetRequiredService<EditFocusIntentionHandler>(),
+                _serviceProvider.GetRequiredService<ActiveFocusSessionStore>());
             activeIntentionWindow.Show();
         }
 

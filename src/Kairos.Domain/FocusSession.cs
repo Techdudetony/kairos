@@ -15,4 +15,11 @@ public sealed record FocusSession
     {
         return new FocusSession(intention, FocusSessionState.Companion);
     }
+
+    public FocusSession WithIntention(FocusIntention updatedIntention)
+    {
+        ArgumentNullException.ThrowIfNull(updatedIntention);
+
+        return new FocusSession(updatedIntention, State);
+    }
 }
