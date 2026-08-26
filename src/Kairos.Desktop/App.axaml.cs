@@ -1,3 +1,4 @@
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
@@ -34,6 +35,19 @@ public partial class App : Avalonia.Application
 
             var startupLogger = _loggerFactory.CreateLogger("Kairos.Desktop.App");
             startupLogger.LogInformation("Kairos application starting");
+
+            var repository = _serviceProvider.GetRequiredService<IFocusSessionRepository>();
+            var restoredSession = repository.Load();
+
+            if (restoredSession is not null)
+            {
+                _serviceProvider.GetRequiredService<ActiveFocusSessionStore>().Set(restoredSession);
+            }
+
+            // Resolved here purely to start its CurrentChanged subscription; nothing else
+            // in the container consumes FocusSessionPersistenceCoordinator via constructor
+            // injection, so it would never otherwise be constructed.
+            _serviceProvider.GetRequiredService<FocusSessionPersistenceCoordinator>().Start();
 
             desktop.Exit += (_, _) =>
             {

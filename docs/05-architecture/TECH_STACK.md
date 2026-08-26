@@ -215,6 +215,14 @@ Candidates include:
 The simplest approach that satisfies MVP requirements should be
 preferred.
 
+### Data Access (Decided — KAIROS-26)
+
+**Microsoft.Data.Sqlite**, used directly with hand-written parameterized SQL — no ORM.
+
+For KAIROS-26's scope (a single-row "active focus session" table, no relationships, no complex queries), EF Core's change-tracking and migrations infrastructure and Dapper's mapping layer were both more than the problem needed. A small repository (`SqliteFocusSessionRepository`) implementing `IFocusSessionRepository` wraps a handful of parameterized `INSERT ... ON CONFLICT DO UPDATE` / `SELECT` statements against a fixed single-row table (`Id = 1`).
+
+This decision applies to the current scope only. If future persistence needs (e.g. focus-session history, multiple related tables, complex queries) make hand-written SQL unwieldy, EF Core or Dapper should be reconsidered at that point rather than retrofitted reluctantly.
+
 ---
 
 ## 7. Windows Integration

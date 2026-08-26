@@ -1,5 +1,6 @@
 using Kairos.Application.FocusIntentions;
 using Kairos.Desktop.ViewModels;
+using Kairos.Infrastructure.FocusIntentions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
@@ -19,6 +20,8 @@ internal static class ServiceCollectionExtensions
 
         services.AddSingleton<ActiveFocusSessionStore>();
         services.AddSingleton<ActiveIntentionViewModel>();
+        services.AddSingleton<IFocusSessionRepository, SqliteFocusSessionRepository>();
+        services.AddSingleton<FocusSessionPersistenceCoordinator>();
 
         services.AddTransient<MainViewModel>();
         services.AddTransient<CreateFocusIntentionHandler>();
